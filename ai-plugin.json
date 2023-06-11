@@ -2,7 +2,7 @@
     "schema_version": "v1",
     "name_for_human": "Magic Conch Shell",
     "name_for_model": "magic_conch",
-    "description_for_human": "Guide your most important life decisions with the magic conch shell.",
+    "description_for_human": "Guide your most important life decisions with the magic conch shell. (Please don't actually, it's only for satire purposes)",
     "description_for_model": "A magic conch shell. User asks a question and gets a response out of a list of predefined answers. Pick the most natural response with the quote from JSON. Before replying, precursor it with 'Magic Conch Shell:' nothing else.",
     "auth": {
         "type": "none"
@@ -13,6 +13,6 @@
         "is_user_authenticated": false
     },
     "logo_url": "https://magic-conch.onrender.com/images/conch_logo.png",
-    "contact_email": "waisibrahim77@example.com",
+    "contact_email": "waisibrahim77@gmail.com",
     "legal_info_url": "https://magic-conch.onrender.com/legal"
 }
