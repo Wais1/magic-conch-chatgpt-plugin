@@ -37,6 +37,32 @@ async def ask():
 
     return JSONResponse(content={"response": response})
 
+
+@app.get("/ask")
+async def ask():
+    # List of possible responses from the magic conch shell
+    responses = [
+        "Maybe someday.",
+        "Nothing.",
+        "Neither.",
+        "I don't think so.",
+        "No.",
+        "Yes.",
+        "Try asking again."
+    ]
+
+    # Choose a random response
+    response = choice(responses)
+
+    return JSONResponse(content={"response": response})
+
+
+@app.get("/legal")
+async def get_legal_info():
+    return FileResponse('legal.html', media_type='text/html')
+
+
 @app.get("/.well-known/ai-plugin.json")
 async def get_plugin_info():
     return FileResponse('ai-plugin.json', media_type='application/json')
+
